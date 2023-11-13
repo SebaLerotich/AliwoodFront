@@ -88,7 +88,7 @@ const displayCart = () => {
 
     //mp
     const mercadopago = new MercadoPago(
-      ACCES_TOKEN, // Agregar el access_token generado en mi cuenta de Mercado Pago
+      "TEST-5699251382631311-111302-82ea5a77a75da4f08788734cc679567d-78716577", // Agregar el access_token generado en mi cuenta de Mercado Pago
       {
         locale: "es-AR", // The most common are: 'es-AR', 'pt-BR' and 'en-US'
       }

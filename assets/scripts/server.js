@@ -6,7 +6,7 @@ const path = require("path");
 
 // REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel
 mercadopago.configure({
-	access_token: PUBLIC_KEY, // Agregar la public key generada en mi cuenta de Mercado Pago
+	access_token: "TEST-90ebd807-b1eb-437d-9c49-7f76f473d5e5", // Agregar la public key generada en mi cuenta de Mercado Pago
 });
 
 
