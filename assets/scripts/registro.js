@@ -94,7 +94,7 @@ form.addEventListener("submit", async (e) => {
           })
       if(registrar==="yes"){
         //await fetch("https://alikeydeploy-production.up.railway.app/personas/", {
-        await fetch("https://alikeydeploy-production.up.railway.app/usuarios/", {
+        await fetch(`https://alikeydeploy-production.up.railway.app/usuarios/`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
