@@ -31,8 +31,8 @@ app.post("/create_preference", (req, res) => {
 			}
 		],
 		back_urls: {
-			"success": "http://localhost:8080",
-			"failure": "http://localhost:8080",
+			"success": "alikeydeploy-production.up.railway.app",
+			"failure": "alikeydeploy-production.up.railway.app",
 			"pending": "",
 		},
 		auto_return: "approved",

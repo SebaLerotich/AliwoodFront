@@ -19,7 +19,7 @@ if(sessionStorage.getItem("user")){
 
 const getProducts = async () => {
   try {
-    const response = await fetch(`http://127.0.0.1:3000/productos`);
+    const response = await fetch(`alikeydeploy-production.up.railway.app/productos`);
     const data = await response.json();
 
     products = products.concat(data); // Agrega todos los productos al array

@@ -63,7 +63,7 @@ form.addEventListener("submit", async (e) => {
       });
     } else {
 
-      await fetch(`http://127.0.0.1:3000/usuarios/${email.value}`)
+      await fetch(`alikeydeploy-production.up.railway.app/usuarios/${email.value}`)
             .then((response) => response.json())
             .then((data) => {
                 if(data.message){
@@ -94,7 +94,7 @@ form.addEventListener("submit", async (e) => {
           })
       if(registrar==="yes"){
         //await fetch("https://alikeydeploy-production.up.railway.app/personas/", {
-        await fetch("http://127.0.0.1:3000/usuarios/", {
+        await fetch("alikeydeploy-production.up.railway.app/usuarios/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
