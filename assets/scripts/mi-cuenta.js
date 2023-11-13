@@ -33,7 +33,7 @@ if(sessionStorage.getItem("user")){
 const userMail = sessionStorage.getItem("user");
 
 //A traves del email del usuario logueado obtengo los datos del mismo y los cargo en el formulario de mi-cuenta.html
-fetch(`alikeydeploy-production.up.railway.app/usuarios/${userMail}`)
+fetch(`https://alikeydeploy-production.up.railway.app/usuarios/${userMail}`)
 .then((response) => response.json())
 .then((data) => {
     if(data.message){
@@ -69,7 +69,7 @@ editar.addEventListener("click", function (){
     if(password.value) contrasenia = password.value;
 
     //Actualizamos los datos del usuario de los campos que modifico
-    fetch(`alikeydeploy-production.up.railway.app/usuarios/${id}`, {
+    fetch(`https://alikeydeploy-production.up.railway.app/usuarios/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -95,7 +95,7 @@ editar.addEventListener("click", function (){
 userDelete.addEventListener("click", function (){
     
     //Eliminamos al usuario de la Base de Datos
-    fetch(`alikeydeploy-production.up.railway.app/usuarios/${id}`, {
+    fetch(`https://alikeydeploy-production.up.railway.app/usuarios/${id}`, {
         method: 'DELETE',
     })
     .then((response) => response.json())

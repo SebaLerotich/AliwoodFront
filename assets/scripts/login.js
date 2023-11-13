@@ -39,7 +39,7 @@ botonLoging.addEventListener("click", async (e) => {
         const email = mail.value;
         const password = pass.value;
 
-        await fetch(`alikeydeploy-production.up.railway.app/usuarios/${email}`)
+        await fetch(`https://alikeydeploy-production.up.railway.app/usuarios/${email}`)
             .then((response) => response.json())
             .then((data) => {
                 if(data.message){

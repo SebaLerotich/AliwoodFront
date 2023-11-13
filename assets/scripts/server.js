@@ -31,8 +31,8 @@ app.post("/create_preference", (req, res) => {
 			}
 		],
 		back_urls: {
-			"success": "alikeydeploy-production.up.railway.app",
-			"failure": "alikeydeploy-production.up.railway.app",
+			"success": "https://alikeydeploy-production.up.railway.app",
+			"failure": "https://alikeydeploy-production.up.railway.app",
 			"pending": "",
 		},
 		auto_return: "approved",

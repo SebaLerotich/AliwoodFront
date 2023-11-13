@@ -104,7 +104,7 @@ const displayCart = () => {
         price: total,
       };
 
-      fetch("alikeydeploy-production.up.railway.app/create_preference", {
+      fetch("https://alikeydeploy-production.up.railway.app/create_preference", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
